@@ -17,19 +17,6 @@ A real-time interactive streaming digital human system enabling synchronized aud
 Domestic Mirror Repository: <https://gitee.com/lipku/LiveTalking> 
 
 
-## News
-- Dec 8, 2024: Enhanced multi-concurrency support; GPU memory no longer increases with the number of concurrent streams.
-- Dec 21, 2024: Added model preheating for wav2lip and musetalk to resolve stuttering during first inference. Thanks to [@heimaojinzhangyz](https://github.com/heimaojinzhangyz).
-- Dec 28, 2024: Integrated the digital human model "Ultralight-Digital-Human". Thanks to [@lijihua2017](https://github.com/lijihua2017).
-- Feb 7, 2025: Added fish-speech Text-to-Speech (TTS) functionality.
-- Feb 21, 2025: Added open-source wav2lip256 model. Thanks to @Buchunbuchun (literally "Not Stupid, Not Stupid").
-- Mar 2, 2025: Added Tencent Cloud Text-to-Speech service.
-- Mar 16, 2025: Supported GPU inference on macOS. Thanks to [@GcsSloop](https://github.com/GcsSloop).
-- May 1, 2025: Simplified runtime parameters; moved the ernerf model to the Git branch "ernerf-rtmp".
-- Jun 7, 2025: Added virtual camera output.
-- Jul 5, 2025: Added Doubao Text-to-Speech. Thanks to [@ELK-milu](https://github.com/ELK-milu).
-- Jul 26, 2025: Supported musetalk v1.5.
-
 ## Features
 1. Supports multiple digital human models: ernerf, musetalk, wav2lip, Ultralight-Digital-Human.
 2. Supports voice cloning.
@@ -37,7 +24,7 @@ Domestic Mirror Repository: <https://gitee.com/lipku/LiveTalking>
 4. Supports full-body video stitching.
 5. Supports WebRTC and virtual camera output.
 6. Supports motion choreography: plays custom videos when the digital human is not speaking.
-7. Supports multi-concurrency.
+7. Supports custom digital human avatars.
 
 ## 1. Installation
 
@@ -125,8 +112,8 @@ The following extended features are available for users who are familiar with th
 5. Supports avatars (digital human images) with unlimited duration.
 6. Provides a real-time audio stream input interface.
 7. Transparent background for the digital human, supporting dynamic background overlay.
-8. Real-time avatar switching.
-9. Python client.
+8. Real-time avatar switching, supporting multiple digital humans in the same scene.
+9. Camera‑driven digital human movements and facial expressions.
 
 For more details: <https://livetalking-doc.readthedocs.io/en/latest/service.html>
 

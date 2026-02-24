@@ -18,19 +18,6 @@
 
 ## 为避免与3d数字人混淆，原项目metahuman-stream改名为livetalking，原有链接地址继续可用
 
-## News
-- 2024.12.8 完善多并发，显存不随并发数增加
-- 2024.12.21 添加wav2lip、musetalk模型预热，解决第一次推理卡顿问题。感谢[@heimaojinzhangyz](https://github.com/heimaojinzhangyz)
-- 2024.12.28 添加数字人模型Ultralight-Digital-Human。 感谢[@lijihua2017](https://github.com/lijihua2017)
-- 2025.2.7 添加fish-speech tts
-- 2025.2.21 添加wav2lip256开源模型 感谢@不蠢不蠢
-- 2025.3.2 添加腾讯语音合成服务
-- 2025.3.16 支持mac gpu推理，感谢[@GcsSloop](https://github.com/GcsSloop) 
-- 2025.5.1 精简运行参数，ernerf模型移至git分支ernerf-rtmp
-- 2025.6.7 添加虚拟摄像头输出
-- 2025.7.5 添加豆包语音合成, 感谢[@ELK-milu](https://github.com/ELK-milu)
-- 2025.7.26 支持musetalk v1.5版本
-
 ## Features
 1. 支持多种数字人模型: ernerf、musetalk、wav2lip、Ultralight-Digital-Human
 2. 支持声音克隆
@@ -38,6 +25,7 @@
 4. 支持webrtc、虚拟摄像头输出
 5. 支持动作编排：不说话时播放自定义视频
 6. 支持多并发
+7. 支持自定义数字人形象
 
 ## 1. Installation
 
@@ -122,8 +110,8 @@ wav2lip256显卡3060以上即可，musetalk需要3080Ti以上。
 5. 支持不限时长的数字人形象avatar
 6. 提供实时音频流输入接口
 7. 数字人透明背景，叠加动态背景 
-8. avatar实时切换  
-9. python客户端  
+8. avatar实时切换, 同一个画面里支持多个数字人  
+9. 摄像头驱动数字人形象动作和表情  
 
 更多详情<https://livetalking-doc.readthedocs.io/zh-cn/latest/service.html>
 
